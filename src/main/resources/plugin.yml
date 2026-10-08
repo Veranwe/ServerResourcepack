@@ -1,0 +1,6 @@
+name: ServerResourcepack
+version: '${version}'
+
+main: eleftheria.code.serverResourcepack.ServerResourcepack
+api-version: '26.2'
+load: POSTWORLD
