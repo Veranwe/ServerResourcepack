@@ -18,10 +18,10 @@ public class Load implements Listener {
                  INVALID_URL ->
                 e.getPlayer().sendMessage("Failed to load resource-pack: '" + e.getStatus() + "'");
 
-            case ACCEPTED,
-                 DOWNLOADED,
-                 SUCCESSFULLY_LOADED ->
+            case SUCCESSFULLY_LOADED ->
                 e.getPlayer().sendMessage("Loaded resourcepack");
+
+            default -> {}
         }
     }
 }
